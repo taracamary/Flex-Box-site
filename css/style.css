@@ -26,6 +26,17 @@
 
 body {
   font-family: 'Proxima Nova Light', sans-serif;
+  color: #262626;
+}
+
+.button-o {
+  border: 2px solid #507fe1;
+  padding: 17px 22px;
+  font-size: 12px;
+  -webkit-text-decoration: uppercase;
+          text-decoration: uppercase;
+  color: #507fe1;
+  font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
 .navbar-wrap {
@@ -41,18 +52,23 @@ body {
   min-height: 80px;
 }
 
-.navbar__menu-button {
-  margin-right: 30px;
-}
-
 .navbar__mobile, .navbar__landline {
   text-align: right;
 }
 
 .navbar__phone {
   display: block;
+  margin-bottom: 5px;
   font-size: 19px;
   font-family: 'Proxima Nova Semibold', sans-serif;
+  text-decoration: none;
+  color: #7b7b79;
+}
+
+.navbar__small-text {
+  display: block;
+  font-size: 14px;
+  color: #7b7b79;
   text-decoration: none;
 }
 
@@ -97,6 +113,6 @@ body {
 .logo__description {
   display: block;
   font-size: 14px;
-  color: #6b6b6b;
+  color: #7b7b79;
 }
 /*# sourceMappingURL=style.css.map */
