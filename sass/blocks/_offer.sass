@@ -1,8 +1,8 @@
 .offer
     padding: 130px 0
     &-block
-        background: #fff url('../img/offer/form-bg.png') no-repeat center right
-        background-size: contain
+        background: #fff url('../img/offer/form-bg.png') no-repeat center 
+        background-size: cover
         box-shadow: 0 15px 25px rgba(0, 0, 0, .1)
         padding: 80px
         margin-top: -200px
@@ -21,7 +21,7 @@
         align-items: center
         max-width: 900px
         margin-bottom: 25px
-        &:last-child:
+        &:last-child
             margin-bottom: 0
     &__label
         display: block
@@ -37,10 +37,6 @@
     &__button
         height: 80px
         width: 100%
-@media(max-width: 1200px) 
-    .offer
-        &-block 
-            background-position: center right -120px
 @media(max-width: 768px) 
     .offer
         &-block 
