@@ -75,9 +75,7 @@ body {
 .input {
   height: 80px;
   padding-left: 30px;
-  width: 100%;
-  padding: 30px;
-  boreder: 1px solid #dddddd;
+  border: 1px solid #dddddd;
 }
 
 @media (max-width: 576px) {
@@ -236,7 +234,7 @@ body {
 }
 
 .hero {
-  background: #f1f1f1 url("../img/hero/hero-bg.jpg") no-repeat center top 80px;
+  background: #414a4f url("../img/hero/hero-bg.png") no-repeat center top 80px;
   background-size: contain;
   padding-top: 180px;
   padding-bottom: 270px;
@@ -287,9 +285,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -299,6 +294,7 @@ body {
 .form__label {
   display: block;
   font-size: 17px;
+  margin-bottom: 15px;
 }
 
 .form__group {
@@ -308,6 +304,15 @@ body {
 
 .form__input {
   width: 100%;
-  border-right: none;
+  border-right-width: 0;
+}
+
+.form__input:last-child {
+  border-right-width: 1px;
+}
+
+.form__button {
+  height: 80px;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

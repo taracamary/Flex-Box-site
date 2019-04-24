@@ -21,9 +21,24 @@ body
 .input
   height: 80px
   padding-left: 30px
-  width: 100%
-  padding: 30px
-  boreder: 1px solid #dddddd
+  border: 1px solid #dddddd
+  margin-right: 20px
+input[type="checkbox"]
+  display: none
+  &:checked + label:before
+      background-color: $primary
+.checkbox
+  &-label
+    display: flex
+    align-items: center
+    margin-right: 40px
+    &:hover
+      cursor: pointer
+    &:before
+      content: ''
+      width: 30px
+      height: 30px
+      border: 1px solid #dddddd
 @media (max-width: 576px)
   .button-o
     font-size: 10px
