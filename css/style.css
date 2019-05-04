@@ -83,6 +83,16 @@ body {
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
+.button-fitting {
+  color: #e59ca5;
+  background-color: #fff;
+}
+
+.button-add {
+  background-color: #f0c4ca;
+  color: #ffffff;
+}
+
 .bg-secondary {
   background: #f1f1f1;
 }
@@ -289,6 +299,7 @@ input[type="checkbox"]:checked + label:before {
   background-size: cover;
   padding-top: 180px;
   padding-bottom: 270px;
+  height: 115vh;
 }
 
 .hero__title {
@@ -441,5 +452,45 @@ input[type="checkbox"]:checked + label:before {
         flex-basis: 100%;
     margin-bottom: 50px;
   }
+}
+
+.catalog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog-card {
+  max-width: 570px;
+  max-height: 130px;
+  position: relative;
+}
+
+.catalog-card__buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.catalog-card__button {
+  font-size: 11px;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.catalog-card__tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.catalog-card__image {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
