@@ -48,6 +48,10 @@ body {
   color: #262626;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section {
   padding: 100px 0;
 }
@@ -72,9 +76,11 @@ body {
   color: #e59ca5;
   font-family: 'Proxima Nova Semibold', sans-serif;
   background-color: #fff;
+  text-decoration: none;
 }
 
 .button {
+  text-decoration: none;
   border: none;
   text-transform: uppercase;
   padding: 25px 45px;
@@ -91,6 +97,13 @@ body {
 .button-add {
   background-color: #f0c4ca;
   color: #ffffff;
+}
+
+.button-like {
+  background-color: #e59ca5;
+  height: 30px;
+  width: 30px;
+  border: none;
 }
 
 .bg-secondary {
@@ -454,6 +467,10 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
+.catalog {
+  background-color: #f5f6f8;
+}
+
 .catalog-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -465,13 +482,21 @@ input[type="checkbox"]:checked + label:before {
       flex-wrap: wrap;
 }
 
+.catalog__card {
+  margin-bottom: 30px;
+}
+
 .catalog-card {
   max-width: 570px;
-  max-height: 130px;
   position: relative;
+  -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
 }
 
 .catalog-card__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -482,15 +507,46 @@ input[type="checkbox"]:checked + label:before {
   border: none;
   text-transform: uppercase;
   padding: 10px;
+  height: 30px;
 }
 
 .catalog-card__tag {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(229, 156, 165, 0.6);
 }
 
 .catalog-card__image {
   display: block;
+}
+
+.catalog__link {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.catalog__link-more {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.catalog__description {
+  display: block;
+}
+
+@media (max-width: 1199px) {
+  .catalog-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .catalog-card {
+    max-width: 470px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
